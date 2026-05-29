@@ -2347,12 +2347,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1734465261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9155feb860356347be5f4a62bcf1bee, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c87f8cd840324244a6ec5c08556be05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allWheels: []
-  trackWidth: 0.4
-  trackThickness: 0.1
+  waypoints: []
+  treadPrefab: {fileID: 7866240316560775928, guid: 4ae487ac084ba1e479fc62be6f3609d3, type: 3}
+  numberOfTreads: 24
+  treadSpeed: 2
+  tankSpeed: 3
+  forwardKey: 119
+  backwardKey: 115
 --- !u!1 &1744582362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,8 +2716,6 @@ GameObject:
   - component: {fileID: 1859743236}
   - component: {fileID: 1859743240}
   - component: {fileID: 1859743239}
-  - component: {fileID: 1859743238}
-  - component: {fileID: 1859743237}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2736,54 +2738,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1764579217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1859743237
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859743235}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &1859743238
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859743235}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1859743239
 MeshRenderer:
   m_ObjectHideFlags: 0
